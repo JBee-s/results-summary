@@ -1,97 +1,104 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <!--Fonts links-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <title>Exercice 3</title>
-
 </head>
-<body class=" flex flex-1 content-center justify-center h-full items-center text-sm">
+
+<body class="flex flex-1 content-center justify-center h-full items-center text-sm">
   <!--Container-->
   <div class="bg-white drop-shadow-lg max-w-lg rounded-xl flex flex-row   ">
   <!--Result section-->  
-    <div class=" flex flex-1 max-w-xs bg-gradient-to-b from-[hsl(252_100%_67%)] to-[hsl(241_81%_54%)] rounded-xl flex flex-col items-center ">
+    <div class="flex flex-1 justify-between max-w-xs bg-gradient-to-b from-[hsl(252_100%_67%)] to-[hsl(241_81%_54%)] rounded-xl flex flex-col items-center text-white ">
       <div><h1>Your Result</h1></div>
-      <div class="bg-gradient-to-b from-[hsla(256_72%_46%/1)] to-[hsla(241_72%_46%/0)] rounded-full flex flex-col items-center ">
-        <p id="score">76</p>
-        <p>of 100</p>
+      <div class="flex flex-col items-center bg-gradient-to-b from-[hsla(256_72%_46%/1)] to-[hsla(241_72%_46%/0)] rounded-full">
+        <p class="font-semibold" id="score">76</p>
+        <p class="">of 100</p>
       </div>
       <div><p>Great</p></div>
-      <div class="text-center text-ellipsis"><p>You scored higher than 65% of the people who have taken these tests.</p></div>
+      <div class="text-center text-ellipsis w-4/5"><p>You scored higher than 65% of the people who have taken these tests.</p></div>
     </div>
   <!--Summary section-->
-  <div class="flex flex-1 flex-col ">
-    <div class=" ">
-      <div class=""><h2>Summary</h2></div>
+  <div class="lex flex-1 flex-col ">
+    <div>
+      <div class="m-3 font-semibold text-[hsl(224_30%_27%)]">
+        <h2>Summary</h2>
+      </div>
+  <!--Reaction item-->
+  <div class="flex">
 
-      <div class="flex flex-row mt-6 rounded bg-[hsla(0_100%_67%/0.5)]">
-        <img src="./assets/images/icon-reaction.svg">
-        <p class= "text-[hsl(0_100%_67%)]">Reaction</p>
-        <p class="font-bold">80 </p>
-        <p> /100</p>
+      <div class="flex justify-between w-full m-3 rounded bg-[hsla(0_100%_67%/0.1)]">
+        <div class="flex items-center flex-row m-1">
+          <img src="./assets/images/icon-reaction.svg">
+          <p class= "text-[hsl(0_100%_67%)]">Reaction</p>
+        </div>
+
+        <div class="flex items-center flex-row">
+          <p class="font-bold">80 </p>
+          <p> /100</p>
+        </div>
+        
       </div>
     </div>
-
-    <div class="">
-      <div class="flex flex-row mt-3 rounded bg-[hsla(39_100%_56%/0.5)]">
-        <img src="./assets/images/icon-memory.svg">
-        <p class="text-[hsl(39_100%_56%)]">Memory</p>
-        <p class="font-bold">92 </p>
-        <p> /100</p>
+  <!--Memory item-->
+    <div class="flex">
+      <div class="flex justify-between w-full m-3 rounded bg-[hsla(39_100%_56%/0.1)]">
+        <div class="flex items-center flex-row m-1">
+          <img src="./assets/images/icon-memory.svg">
+          <p class="text-[hsl(39_100%_56%)]">Memory</p>
+        </div>
+        <div class="flex items-center flex-row">
+          <p class="font-bold">92 </p>
+          <p> /100</p>
+        </div >        
       </div>
     </div>
+  <!--Verbal item-->
+    <div class="flex">
+      <div class="flex justify-between w-full m-3 rounded bg-[hsla(166_100%_37%/0.1)]">
+        <div class="flex items-center flex-row m-1">
+          <img src="./assets/images/icon-verbal.svg">
+          <p class="text-[hsl(166_100%_37%)]">Verbal</p>
+        </div>
 
-    <div class="">
-      <div class="flex flex-row mt-3 rounded bg-[hsla(166_100%_37%/0.5)]">
-        <img src="./assets/images/icon-verbal.svg">
-        <p class="text-[hsl(166_100%_37%)]">Verbal</p>
-        <p class="font-bold">61 </p>
-        <p> /100</p>
+        <div class="flex items-center flex-row">
+          <p class="font-bold">61 </p>
+          <p> /100</p>
+        </div>
+        
       </div>
     </div>
+  <!--Visual item-->
+    <div class="flex">
+      <div class="flex justify-between w-full m-3 rounded bg-[hsla(234_85%_45%/0.1)]">
 
-    <div class="">
-      <div class="flex flex-row mt-3 rounded bg-[hsla(234_85%_45%/0.5)]">
-        <img src="./assets/images/icon-visual.svg">
-        <p class="">Visual</p>
-        <p class="font-bold">72 </p>
-        <p> /100</p>
+        <div class="flex items-center flex-row m-1">
+          <img src="./assets/images/icon-visual.svg">
+          <p class="text-[hsl(234_85%_45%)]">Visual</p>
+        </div>
+
+        <div class="flex items-center flex-row">
+          <p class="font-bold">72 </p>
+          <p> /100</p>
+        </div>
+
       </div>
     </div>
 
     <div> 
-      <button class="rounded-xl bg-gradient-to-b from-[hsl(252_100%_67%)] to-[hsl(241_81%_54%)]">Continue</button>
+      <button class="text-white pr-3 pl-3 rounded-xl m-3 bg-gradient-to-b from-[hsl(252_100%_67%)] to-[hsl(241_81%_54%)]">Continue</button>
     </div>
   </div>
     
-    
   </div>
 
-  
-  
-  
-  
-
-  
-   
-<!--
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue-->
-  
- 
 </body>
 </html>
